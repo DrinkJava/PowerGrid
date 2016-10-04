@@ -142,13 +142,13 @@ ISMRMRD::Acquisition getISMRMRDAcq(ISMRMRD::Dataset *d, uword Nacq) {
     }
 
     //Deal with trajectories
-    for (uword ii = 0; ii < acq.number_of_samples(); ii++) {
-        kx(ii) = acq.traj(0, ii);
-        ky(ii) = acq.traj(1, ii);
-        kz(ii) = acq.traj(2, ii);
-        tvec(ii) = acq.traj(3, ii);
-    }
-    data = vectorise(dataTemp);
+    // for (uword ii = 0; ii < acq.number_of_samples(); ii++) {
+    //     kx(ii) = acq.traj(0, ii);
+    //     ky(ii) = acq.traj(1, ii);
+    //     kz(ii) = acq.traj(2, ii);
+    //     tvec(ii) = acq.traj(3, ii);
+    // }
+    // data = vectorise(dataTemp);
     return acq;
 }
 

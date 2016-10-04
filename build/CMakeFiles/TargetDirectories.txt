@@ -1,0 +1,7 @@
+/vagrant/build/CMakeFiles/rebuild_cache.dir
+/vagrant/build/CMakeFiles/PowerGridIsmrmrd.dir
+/vagrant/build/CMakeFiles/PowerGridGdft.dir
+/vagrant/build/CMakeFiles/edit_cache.dir
+/vagrant/build/CMakeFiles/PowerGridGnufft.dir
+/vagrant/build/CMakeFiles/PowerGridDWI3DDFT.dir
+/vagrant/build/CMakeFiles/PowerGridSTEAM.dir
