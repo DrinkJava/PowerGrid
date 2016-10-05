@@ -151,7 +151,7 @@ int main(int argc, char** argv)
 	std::cout << "NRepMax = " << NRepMax << std::endl;										 //
        																	 //
 	//Step through the acquisitions												 //
-		for( int ii = 0; ii < numAcq; ii++ ) {											 //
+		for( u_int ii = 0; ii < numAcq; ii++ ) {											 //
 		getISMRMRDAcqData(d,ii,data,kx,ky,kz,tvec);										 //
 		Ggrid<double> Gg(nro, 2.0, Nx, Ny, Nz, kx, ky, kz, vectorise(ix), vectorise(iy), vectorise(iz));			 //
 		TimeSegmentation<double, Ggrid<double>> A(Gg, vectorise(FM), vectorise(tvec), nro, Nx * Ny * Nz, L, type, NShots);				 //
