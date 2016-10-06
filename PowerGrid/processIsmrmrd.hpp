@@ -79,6 +79,7 @@ arma::Col<T1> getISMRMRDSenseMap(ISMRMRD::Dataset *d) {
     arma::Col<T1> sen;
     if (d->getNumberOfNDArrays(senseMap) > 1) {
         //Throw error here
+      std::cout << "OH NO!!!! SEGV APPROACHING!" << std::endl;
     }
     ISMRMRD::NDArray<T1> tempArray;
     d->readNDArray(senseMap, 0, tempArray);
