@@ -95,7 +95,7 @@ void processISMRMRDInput(std::string inputDataFile, ISMRMRD::Dataset *&d, ISMRMR
     openISMRMRDData(inputDataFile, d, hdr);
     std::cout << "Opened ISMRMRD file for input " << std::endl;
     std::cout << "About to get the SENSE map" << std::endl;
-    //sen = getISMRMRDSenseMap<std::complex<T1>>(d);
+    sen = getISMRMRDSenseMap<std::complex<T1>>(d);
     std::cout << "About to get the Field map" << std::endl;
     FM = getISMRMRDFieldMap<T1>(d);
 
