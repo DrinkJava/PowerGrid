@@ -117,7 +117,7 @@ int main(int argc, char** argv)
   ISMRMRD::IsmrmrdHeader hdr;												
   processISMRMRDInput(rawDataFilePath, d, hdr, FM, sen);									
   savemat("testFM.mat", "FM", FM);											
-  //	savemat("testSen.mat", "sen", sen);										
+  savemat("testSen.mat", "sen", sen);										
 
   std::cout << "Number of elements in SENSE Map = " << sen.n_rows << std::endl;						 
   std::cout << "Number of elements in Field Map = " << FM.n_rows << std::endl;						
