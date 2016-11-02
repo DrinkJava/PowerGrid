@@ -245,6 +245,61 @@ clean: CMakeFiles/PowerGridSTEAM.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory catch
+
+# Convenience name for "all" pass in the directory.
+catch/all: catch/CMakeFiles/catch.dir/all
+
+.PHONY : catch/all
+
+# Convenience name for "clean" pass in the directory.
+catch/clean: catch/CMakeFiles/catch.dir/clean
+
+.PHONY : catch/clean
+
+# Convenience name for "preinstall" pass in the directory.
+catch/preinstall:
+
+.PHONY : catch/preinstall
+
+#=============================================================================
+# Target rules for target catch/CMakeFiles/catch.dir
+
+# All Build rule for target.
+catch/CMakeFiles/catch.dir/all:
+	$(MAKE) -f catch/CMakeFiles/catch.dir/build.make catch/CMakeFiles/catch.dir/depend
+	$(MAKE) -f catch/CMakeFiles/catch.dir/build.make catch/CMakeFiles/catch.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/vagrant/build/CMakeFiles --progress-num=16,17,18,19,20,21,22,23 "Built target catch"
+.PHONY : catch/CMakeFiles/catch.dir/all
+
+# Include target in all.
+all: catch/CMakeFiles/catch.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+catch/CMakeFiles/catch.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /vagrant/build/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 catch/CMakeFiles/catch.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /vagrant/build/CMakeFiles 0
+.PHONY : catch/CMakeFiles/catch.dir/rule
+
+# Convenience name for target.
+catch: catch/CMakeFiles/catch.dir/rule
+
+.PHONY : catch
+
+# clean rule for target.
+catch/CMakeFiles/catch.dir/clean:
+	$(MAKE) -f catch/CMakeFiles/catch.dir/build.make catch/CMakeFiles/catch.dir/clean
+.PHONY : catch/CMakeFiles/catch.dir/clean
+
+# clean rule for target.
+clean: catch/CMakeFiles/catch.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

@@ -1,0 +1,13 @@
+# Target labels
+ catch
+# Source files and their labels
+/vagrant/build/catch/CMakeFiles/catch
+/vagrant/build/catch/CMakeFiles/catch.rule
+/vagrant/build/catch/CMakeFiles/catch-complete.rule
+/vagrant/build/catch/src/catch-stamp/catch-install.rule
+/vagrant/build/catch/src/catch-stamp/catch-mkdir.rule
+/vagrant/build/catch/src/catch-stamp/catch-download.rule
+/vagrant/build/catch/src/catch-stamp/catch-update.rule
+/vagrant/build/catch/src/catch-stamp/catch-patch.rule
+/vagrant/build/catch/src/catch-stamp/catch-configure.rule
+/vagrant/build/catch/src/catch-stamp/catch-build.rule

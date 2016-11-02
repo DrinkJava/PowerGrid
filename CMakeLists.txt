@@ -1,5 +1,10 @@
 cmake_minimum_required(VERSION 3.2) #CMake version 3.2 required to properly support CMAKE_CXX_STANDARD
 
+
+#CATCH
+add_subdirectory(catch)
+include_directories(${CATCH_INCLUDE_DIR} ${COMMON_INCLUDES})
+enable_testing(true)
 ## Flags and settings that change the compiler (i.e. from default to C++11 or C++14)
 ## need to be set BEFORE calling project command (which does introspection and sets
 ## variables about the behavior of the compiler).

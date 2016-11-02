@@ -78,6 +78,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /vagrant/build/CMakeFiles /vagrant/build/CMakeFiles/progress.marks
@@ -174,6 +185,19 @@ PowerGridSTEAM: cmake_check_build_system
 PowerGridSTEAM/fast:
 	$(MAKE) -f CMakeFiles/PowerGridSTEAM.dir/build.make CMakeFiles/PowerGridSTEAM.dir/build
 .PHONY : PowerGridSTEAM/fast
+
+#=============================================================================
+# Target rules for targets named catch
+
+# Build rule for target.
+catch: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 catch
+.PHONY : catch
+
+# fast build rule for target.
+catch/fast:
+	$(MAKE) -f catch/CMakeFiles/catch.dir/build.make catch/CMakeFiles/catch.dir/build
+.PHONY : catch/fast
 
 PowerGrid/PowerGridDWI3DDFT.o: PowerGrid/PowerGridDWI3DDFT.cpp.o
 
@@ -361,7 +385,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... PowerGridGnufft"
 	@echo "... PowerGridDWI3DDFT"
+	@echo "... test"
 	@echo "... PowerGridSTEAM"
+	@echo "... catch"
 	@echo "... PowerGrid/PowerGridDWI3DDFT.o"
 	@echo "... PowerGrid/PowerGridDWI3DDFT.i"
 	@echo "... PowerGrid/PowerGridDWI3DDFT.s"

@@ -37,7 +37,7 @@ Developed by:
 template<typename T1, typename std::enable_if<std::is_same<T1, float>::value, int>::type = 0>
 void ifft2dCPU(T1* d_data, int nx, int ny)
 {
-	cout << "Running backward xform 2d" << endl;
+  //	cout << "Running backward xform 2d" << endl;
 	fftwf_plan plan;
 	plan = fftwf_plan_dft_2d(nx,
 			ny, (fftwf_complex*) d_data, (fftwf_complex*) d_data,
@@ -52,7 +52,7 @@ void ifft2dCPU(T1* d_data, int nx, int ny)
 template<typename T1, typename std::enable_if<std::is_same<T1, float>::value, int>::type = 0>
 void fft2dCPU(T1* d_data, int nx, int ny)
 {
-	cout << "Running forward xform 2d" << endl;
+  //	cout << "Running forward xform 2d" << endl;
 	fftwf_plan plan;
 	plan = fftwf_plan_dft_2d(nx,
 			ny, (fftwf_complex*) d_data, (fftwf_complex*) d_data,
@@ -67,7 +67,7 @@ void fft2dCPU(T1* d_data, int nx, int ny)
 template<typename T1, typename std::enable_if<std::is_same<T1, float>::value, int>::type = 0>
 void ifft3dCPU(T1* d_data, int nx, int ny, int nz)
 {
-	cout << "Running backward xform 3d" << endl;
+  //cout << "Running backward xform 3d" << endl;
 	fftwf_plan plan;
 	plan = fftwf_plan_dft_3d(nz,
 			ny, nx, (fftwf_complex*) d_data,
@@ -82,7 +82,7 @@ void ifft3dCPU(T1* d_data, int nx, int ny, int nz)
 template<typename T1, typename std::enable_if<std::is_same<T1, float>::value, int>::type = 0>
 void fft3dCPU(T1* d_data, int nx, int ny, int nz)
 {
-	cout << "Running forward xform 3d" << endl;
+  //	cout << "Running forward xform 3d" << endl;
 	fftwf_plan plan;
 	plan = fftwf_plan_dft_3d(nz,
 			ny, nx, (fftwf_complex*) d_data,
@@ -98,7 +98,7 @@ void fft3dCPU(T1* d_data, int nx, int ny, int nz)
 template<typename T1, typename std::enable_if<std::is_same<T1, double>::value, int>::type = 0>
 void ifft2dCPU(T1* d_data, int nx, int ny)
 {
-	cout << "Running backward xform 2d" << endl;
+  //	cout << "Running backward xform 2d" << endl;
 
 	fftw_plan plan;
 	plan = fftw_plan_dft_2d(
@@ -113,7 +113,7 @@ void ifft2dCPU(T1* d_data, int nx, int ny)
 template<typename T1, typename std::enable_if<std::is_same<T1, double>::value, int>::type = 0>
 void fft2dCPU(T1* d_data, int nx, int ny)
 {
-	cout << "Running forward xform 2d" << endl;
+  //	cout << "Running forward xform 2d" << endl;
 
 	fftw_plan plan;
 	plan = fftw_plan_dft_2d(
@@ -128,7 +128,7 @@ void fft2dCPU(T1* d_data, int nx, int ny)
 template<typename T1, typename std::enable_if<std::is_same<T1, double>::value, int>::type = 0>
 void ifft3dCPU(T1* d_data, int nx, int ny, int nz)
 {
-	cout << "Running backward xform 3d" << endl;
+  //	cout << "Running backward xform 3d" << endl;
 
 	fftw_plan plan;
 	plan = fftw_plan_dft_3d(nz,
@@ -143,7 +143,7 @@ void ifft3dCPU(T1* d_data, int nx, int ny, int nz)
 template<typename T1, typename std::enable_if<std::is_same<T1, double>::value, int>::type = 0>
 void fft3dCPU(T1* d_data, int nx, int ny, int nz)
 {
-	cout << "Running forward xform 3d" << endl;
+  //	cout << "Running forward xform 3d" << endl;
 
 	fftw_plan plan;
 	plan = fftw_plan_dft_3d(nz,

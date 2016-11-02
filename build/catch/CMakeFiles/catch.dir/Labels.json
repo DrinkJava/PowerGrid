@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/vagrant/build/catch/CMakeFiles/catch"
+		},
+		{
+			"file" : "/vagrant/build/catch/CMakeFiles/catch.rule"
+		},
+		{
+			"file" : "/vagrant/build/catch/CMakeFiles/catch-complete.rule"
+		},
+		{
+			"file" : "/vagrant/build/catch/src/catch-stamp/catch-install.rule"
+		},
+		{
+			"file" : "/vagrant/build/catch/src/catch-stamp/catch-mkdir.rule"
+		},
+		{
+			"file" : "/vagrant/build/catch/src/catch-stamp/catch-download.rule"
+		},
+		{
+			"file" : "/vagrant/build/catch/src/catch-stamp/catch-update.rule"
+		},
+		{
+			"file" : "/vagrant/build/catch/src/catch-stamp/catch-patch.rule"
+		},
+		{
+			"file" : "/vagrant/build/catch/src/catch-stamp/catch-configure.rule"
+		},
+		{
+			"file" : "/vagrant/build/catch/src/catch-stamp/catch-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"catch"
+		],
+		"name" : "catch"
+	}
+}

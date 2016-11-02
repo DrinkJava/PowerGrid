@@ -4,4 +4,9 @@
 /vagrant/build/CMakeFiles/edit_cache.dir
 /vagrant/build/CMakeFiles/PowerGridGnufft.dir
 /vagrant/build/CMakeFiles/PowerGridDWI3DDFT.dir
+/vagrant/build/CMakeFiles/test.dir
 /vagrant/build/CMakeFiles/PowerGridSTEAM.dir
+/vagrant/build/catch/CMakeFiles/edit_cache.dir
+/vagrant/build/catch/CMakeFiles/rebuild_cache.dir
+/vagrant/build/catch/CMakeFiles/test.dir
+/vagrant/build/catch/CMakeFiles/catch.dir
