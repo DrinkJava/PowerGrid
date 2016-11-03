@@ -1,4 +1,5 @@
 /vagrant/build/CMakeFiles/rebuild_cache.dir
+/vagrant/build/CMakeFiles/Test.dir
 /vagrant/build/CMakeFiles/PowerGridIsmrmrd.dir
 /vagrant/build/CMakeFiles/PowerGridGdft.dir
 /vagrant/build/CMakeFiles/edit_cache.dir

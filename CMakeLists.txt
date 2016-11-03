@@ -154,3 +154,6 @@ add_definitions(-DARMA_DONT_USE_CXX11)
 if (MPI)
     add_subdirectory(PowerGrid/MPI)
 endif ()
+
+add_executable(Test ./PowerGrid/testGnufft.cpp)
+

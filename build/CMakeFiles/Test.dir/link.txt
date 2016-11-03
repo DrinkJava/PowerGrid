@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++11 -g -I/usr/include -g -O0 -lfftw3 -g   CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.o  -o Test -rdynamic 

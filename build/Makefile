@@ -122,6 +122,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Test
+
+# Build rule for target.
+Test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Test
+.PHONY : Test
+
+# fast build rule for target.
+Test/fast:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/build
+.PHONY : Test/fast
+
+#=============================================================================
 # Target rules for targets named PowerGridIsmrmrd
 
 # Build rule for target.
@@ -373,6 +386,33 @@ PowerGrid/config.cxx.s:
 	$(MAKE) -f CMakeFiles/PowerGridSTEAM.dir/build.make CMakeFiles/PowerGridSTEAM.dir/PowerGrid/config.cxx.s
 .PHONY : PowerGrid/config.cxx.s
 
+PowerGrid/testGnufft.o: PowerGrid/testGnufft.cpp.o
+
+.PHONY : PowerGrid/testGnufft.o
+
+# target to build an object file
+PowerGrid/testGnufft.cpp.o:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.o
+.PHONY : PowerGrid/testGnufft.cpp.o
+
+PowerGrid/testGnufft.i: PowerGrid/testGnufft.cpp.i
+
+.PHONY : PowerGrid/testGnufft.i
+
+# target to preprocess a source file
+PowerGrid/testGnufft.cpp.i:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.i
+.PHONY : PowerGrid/testGnufft.cpp.i
+
+PowerGrid/testGnufft.s: PowerGrid/testGnufft.cpp.s
+
+.PHONY : PowerGrid/testGnufft.s
+
+# target to generate assembly for a file
+PowerGrid/testGnufft.cpp.s:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.s
+.PHONY : PowerGrid/testGnufft.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -380,6 +420,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... Test"
 	@echo "... PowerGridIsmrmrd"
 	@echo "... PowerGridGdft"
 	@echo "... edit_cache"
@@ -406,6 +447,9 @@ help:
 	@echo "... PowerGrid/config.o"
 	@echo "... PowerGrid/config.i"
 	@echo "... PowerGrid/config.s"
+	@echo "... PowerGrid/testGnufft.o"
+	@echo "... PowerGrid/testGnufft.i"
+	@echo "... PowerGrid/testGnufft.s"
 .PHONY : help
 
 
