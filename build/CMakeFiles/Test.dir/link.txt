@@ -1,1 +1,1 @@
-/usr/bin/c++    -std=c++11 -g -I/usr/include -g -O0 -lfftw3 -g   CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.o  -o Test -rdynamic 
+/usr/bin/c++    -std=c++11 -g -I/usr/include -g -O0 -lfftw3 -g   CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.o  -o Test -rdynamic -lmatio -lboost_program_options -lboost_serialization -lboost_mpi -lfftw3 -lfftw3f -larmadillo -lxerces-c-3.1 /usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so -lpthread -lsz -lz -ldl -lm /usr/local/lib/libismrmrd.so -Wl,-rpath,/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/usr/local/lib 

@@ -57,39 +57,54 @@ include CMakeFiles/Test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Test.dir/flags.make
 
-CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.o: CMakeFiles/Test.dir/flags.make
-CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.o: ../PowerGrid/testGnufft.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/vagrant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.o -c /vagrant/PowerGrid/testGnufft.cpp
+CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.o: CMakeFiles/Test.dir/flags.make
+CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.o: ../PowerGrid/TestAll.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/vagrant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.o -c /vagrant/PowerGrid/TestAll.cpp
 
-CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /vagrant/PowerGrid/testGnufft.cpp > CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.i
+CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /vagrant/PowerGrid/TestAll.cpp > CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.i
 
-CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /vagrant/PowerGrid/testGnufft.cpp -o CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.s
+CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /vagrant/PowerGrid/TestAll.cpp -o CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.s
 
-CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.o.requires:
+CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.o.requires:
 
-.PHONY : CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.o.requires
+.PHONY : CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.o.requires
 
-CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.o.provides: CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.o.provides.build
-.PHONY : CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.o.provides
+CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.o.provides: CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.o.provides.build
+.PHONY : CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.o.provides
 
-CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.o.provides.build: CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.o
+CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.o.provides.build: CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.o
 
 
 # Object files for target Test
 Test_OBJECTS = \
-"CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.o"
+"CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.o"
 
 # External object files for target Test
 Test_EXTERNAL_OBJECTS =
 
-Test: CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.o
+Test: CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.o
 Test: CMakeFiles/Test.dir/build.make
+Test: /usr/lib/x86_64-linux-gnu/libmatio.so
+Test: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+Test: /usr/lib/x86_64-linux-gnu/libboost_serialization.so
+Test: /usr/lib/x86_64-linux-gnu/libboost_mpi.so
+Test: /usr/lib/x86_64-linux-gnu/libfftw3.so
+Test: /usr/lib/x86_64-linux-gnu/libfftw3f.so
+Test: /usr/lib/libarmadillo.so
+Test: /usr/lib/x86_64-linux-gnu/libxerces-c-3.1.so
+Test: /usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so
+Test: /usr/lib/x86_64-linux-gnu/libpthread.so
+Test: /usr/lib/x86_64-linux-gnu/libsz.so
+Test: /usr/lib/x86_64-linux-gnu/libz.so
+Test: /usr/lib/x86_64-linux-gnu/libdl.so
+Test: /usr/lib/x86_64-linux-gnu/libm.so
+Test: /usr/local/lib/libismrmrd.so
 Test: CMakeFiles/Test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/vagrant/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Test.dir/link.txt --verbose=$(VERBOSE)
@@ -99,7 +114,7 @@ CMakeFiles/Test.dir/build: Test
 
 .PHONY : CMakeFiles/Test.dir/build
 
-CMakeFiles/Test.dir/requires: CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.o.requires
+CMakeFiles/Test.dir/requires: CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.o.requires
 
 .PHONY : CMakeFiles/Test.dir/requires
 

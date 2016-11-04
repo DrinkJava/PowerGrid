@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.o"
+  "CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.o"
   "Test.pdb"
   "Test"
 )

@@ -50,6 +50,9 @@ Boost_SERIALIZATION_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_se
 //Boost serialization library (release)
 Boost_SERIALIZATION_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_serialization.so
 
+//Enable Catch framework
+CATCH:BOOL=ON
+
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 

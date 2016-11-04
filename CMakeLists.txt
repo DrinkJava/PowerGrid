@@ -32,6 +32,7 @@ project("PowerGrid" CXX)
 option(OPENACC "Enable OpenACC support" OFF)
 option(ISMRMRD "Enable ISMRMRD Suppport" ON)
 option(MPI "Enable MPI Support" OFF)
+option(CATCH "Enable Catch framework" ON)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
 find_package(MATIO REQUIRED)
@@ -112,17 +113,23 @@ target_link_libraries(PowerGridGnufft ${LIBS})
 target_link_libraries(PowerGridDWI3DDFT ${LIBS})
 target_link_libraries(PowerGridSTEAM ${LIBS})
 if (ISMRMRD)
-	set(POWERGRID_ISMRMRD
-			./PowerGrid/PowerGridIsmrmrd.cpp
-			./PowerGrid/config.cxx
-	)
-	find_library(ISMRMRD_LIBRARIES ismrmrd HINTS /usr/lib/)
-	set(LIBS ${LIBS} ${ISMRMRD_LIBRARIES})
-	add_executable(PowerGridIsmrmrd ${POWERGRID_ISMRMRD})
-	target_link_libraries(PowerGridIsmrmrd ${LIBS})
-
+  set(POWERGRID_ISMRMRD
+    ./PowerGrid/PowerGridIsmrmrd.cpp
+    ./PowerGrid/config.cxx
+    )
+  find_library(ISMRMRD_LIBRARIES ismrmrd HINTS /usr/lib/)
+  set(LIBS ${LIBS} ${ISMRMRD_LIBRARIES})
+  add_executable(PowerGridIsmrmrd ${POWERGRID_ISMRMRD})
+  target_link_libraries(PowerGridIsmrmrd ${LIBS})
 endif ()
 
+if (CATCH)
+  set(TEST
+    ./PowerGrid/TestAll.cpp
+    )
+  add_executable(Test ${TEST})
+  target_link_libraries(Test ${LIBS})
+endif ()
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -I/usr/include")
 if(APPLE)
@@ -155,5 +162,5 @@ if (MPI)
     add_subdirectory(PowerGrid/MPI)
 endif ()
 
-add_executable(Test ./PowerGrid/testGnufft.cpp)
+
 

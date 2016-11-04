@@ -347,6 +347,33 @@ PowerGrid/PowerGridSTEAM.cpp.s:
 	$(MAKE) -f CMakeFiles/PowerGridSTEAM.dir/build.make CMakeFiles/PowerGridSTEAM.dir/PowerGrid/PowerGridSTEAM.cpp.s
 .PHONY : PowerGrid/PowerGridSTEAM.cpp.s
 
+PowerGrid/TestAll.o: PowerGrid/TestAll.cpp.o
+
+.PHONY : PowerGrid/TestAll.o
+
+# target to build an object file
+PowerGrid/TestAll.cpp.o:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.o
+.PHONY : PowerGrid/TestAll.cpp.o
+
+PowerGrid/TestAll.i: PowerGrid/TestAll.cpp.i
+
+.PHONY : PowerGrid/TestAll.i
+
+# target to preprocess a source file
+PowerGrid/TestAll.cpp.i:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.i
+.PHONY : PowerGrid/TestAll.cpp.i
+
+PowerGrid/TestAll.s: PowerGrid/TestAll.cpp.s
+
+.PHONY : PowerGrid/TestAll.s
+
+# target to generate assembly for a file
+PowerGrid/TestAll.cpp.s:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/PowerGrid/TestAll.cpp.s
+.PHONY : PowerGrid/TestAll.cpp.s
+
 PowerGrid/config.o: PowerGrid/config.cxx.o
 
 .PHONY : PowerGrid/config.o
@@ -386,33 +413,6 @@ PowerGrid/config.cxx.s:
 	$(MAKE) -f CMakeFiles/PowerGridSTEAM.dir/build.make CMakeFiles/PowerGridSTEAM.dir/PowerGrid/config.cxx.s
 .PHONY : PowerGrid/config.cxx.s
 
-PowerGrid/testGnufft.o: PowerGrid/testGnufft.cpp.o
-
-.PHONY : PowerGrid/testGnufft.o
-
-# target to build an object file
-PowerGrid/testGnufft.cpp.o:
-	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.o
-.PHONY : PowerGrid/testGnufft.cpp.o
-
-PowerGrid/testGnufft.i: PowerGrid/testGnufft.cpp.i
-
-.PHONY : PowerGrid/testGnufft.i
-
-# target to preprocess a source file
-PowerGrid/testGnufft.cpp.i:
-	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.i
-.PHONY : PowerGrid/testGnufft.cpp.i
-
-PowerGrid/testGnufft.s: PowerGrid/testGnufft.cpp.s
-
-.PHONY : PowerGrid/testGnufft.s
-
-# target to generate assembly for a file
-PowerGrid/testGnufft.cpp.s:
-	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/PowerGrid/testGnufft.cpp.s
-.PHONY : PowerGrid/testGnufft.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -444,12 +444,12 @@ help:
 	@echo "... PowerGrid/PowerGridSTEAM.o"
 	@echo "... PowerGrid/PowerGridSTEAM.i"
 	@echo "... PowerGrid/PowerGridSTEAM.s"
+	@echo "... PowerGrid/TestAll.o"
+	@echo "... PowerGrid/TestAll.i"
+	@echo "... PowerGrid/TestAll.s"
 	@echo "... PowerGrid/config.o"
 	@echo "... PowerGrid/config.i"
 	@echo "... PowerGrid/config.s"
-	@echo "... PowerGrid/testGnufft.o"
-	@echo "... PowerGrid/testGnufft.i"
-	@echo "... PowerGrid/testGnufft.s"
 .PHONY : help
 
 
