@@ -127,8 +127,6 @@ processIsmrmrd.hpp
 /vagrant/PowerGrid/processIsmrmrd.hpp
 PowerGrid.h
 /vagrant/PowerGrid/PowerGrid.h
-Gnufft.hpp
-/vagrant/PowerGrid/Gnufft.hpp
 
 /vagrant/PowerGrid/TimeSegmentation.hpp
 
